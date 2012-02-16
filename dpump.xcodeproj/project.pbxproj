@@ -13,19 +13,34 @@
 		42282E0E14ED3DD1000790B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42282E0C14ED3DD1000790B4 /* InfoPlist.strings */; };
 		42282E1014ED3DD1000790B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42282E0F14ED3DD1000790B4 /* main.m */; };
 		42282E1414ED3DD1000790B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42282E1314ED3DD1000790B4 /* AppDelegate.m */; };
+		42DA8D9D14EDB8B600F172B6 /* libiodine_proj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4253E38E14EDAEC60023BAE5 /* libiodine_proj.a */; };
+		42DA8DA014EDBD2500F172B6 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DA8D9F14EDBD2500F172B6 /* Settings.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4253E38D14EDAEC60023BAE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4253E38914EDAEC60023BAE5 /* iodine_proj.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4253E32F14EDAE0F0023BAE5;
+			remoteInfo = iodine_proj;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		42282DFF14ED3DD1000790B4 /* dpump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dpump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42282E0314ED3DD1000790B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42282E0514ED3DD1000790B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		42282E0714ED3DD1000790B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		42282E0B14ED3DD1000790B4 /* dpump-Info.plist */ = {isa = PBXFileReference; path = "dpump-Info.plist"; sourceTree = "<group>"; };
+		42282E0B14ED3DD1000790B4 /* dpump-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dpump-Info.plist"; sourceTree = "<group>"; };
 		42282E0D14ED3DD1000790B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		42282E0F14ED3DD1000790B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		42282E1114ED3DD1000790B4 /* dpump-Prefix.pch */ = {isa = PBXFileReference; path = "dpump-Prefix.pch"; sourceTree = "<group>"; };
-		42282E1214ED3DD1000790B4 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		42282E1114ED3DD1000790B4 /* dpump-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dpump-Prefix.pch"; sourceTree = "<group>"; };
+		42282E1214ED3DD1000790B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42282E1314ED3DD1000790B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4253E38914EDAEC60023BAE5 /* iodine_proj.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iodine_proj.xcodeproj; path = ../iodine_proj/iodine_proj.xcodeproj; sourceTree = "<group>"; };
+		42DA8D9E14EDBD2500F172B6 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		42DA8D9F14EDBD2500F172B6 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42DA8D9D14EDB8B600F172B6 /* libiodine_proj.a in Frameworks */,
 				42282E0414ED3DD1000790B4 /* UIKit.framework in Frameworks */,
 				42282E0614ED3DD1000790B4 /* Foundation.framework in Frameworks */,
 				42282E0814ED3DD1000790B4 /* CoreGraphics.framework in Frameworks */,
@@ -45,6 +61,7 @@
 		42282DF414ED3DD1000790B4 = {
 			isa = PBXGroup;
 			children = (
+				4253E38914EDAEC60023BAE5 /* iodine_proj.xcodeproj */,
 				42282E0914ED3DD1000790B4 /* dpump */,
 				42282E0214ED3DD1000790B4 /* Frameworks */,
 				42282E0014ED3DD1000790B4 /* Products */,
@@ -74,6 +91,8 @@
 			children = (
 				42282E1214ED3DD1000790B4 /* AppDelegate.h */,
 				42282E1314ED3DD1000790B4 /* AppDelegate.m */,
+				42DA8D9E14EDBD2500F172B6 /* Settings.h */,
+				42DA8D9F14EDBD2500F172B6 /* Settings.m */,
 				42282E0A14ED3DD1000790B4 /* Supporting Files */,
 			);
 			path = dpump;
@@ -88,6 +107,14 @@
 				42282E1114ED3DD1000790B4 /* dpump-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4253E38A14EDAEC60023BAE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4253E38E14EDAEC60023BAE5 /* libiodine_proj.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,12 +155,28 @@
 			mainGroup = 42282DF414ED3DD1000790B4;
 			productRefGroup = 42282E0014ED3DD1000790B4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4253E38A14EDAEC60023BAE5 /* Products */;
+					ProjectRef = 4253E38914EDAEC60023BAE5 /* iodine_proj.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				42282DFE14ED3DD1000790B4 /* dpump */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4253E38E14EDAEC60023BAE5 /* libiodine_proj.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libiodine_proj.a;
+			remoteRef = 4253E38D14EDAEC60023BAE5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		42282DFD14ED3DD1000790B4 /* Resources */ = {
@@ -153,6 +196,7 @@
 			files = (
 				42282E1014ED3DD1000790B4 /* main.m in Sources */,
 				42282E1414ED3DD1000790B4 /* AppDelegate.m in Sources */,
+				42DA8DA014EDBD2500F172B6 /* Settings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,8 +264,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "dpump/dpump-Prefix.pch";
+				HEADER_SEARCH_PATHS = "/Users/motiejus/code/iodine/**";
 				INFOPLIST_FILE = "dpump/dpump-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/motiejus/code/iodine/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -231,8 +277,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "dpump/dpump-Prefix.pch";
+				HEADER_SEARCH_PATHS = "/Users/motiejus/code/iodine/**";
 				INFOPLIST_FILE = "dpump/dpump-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/motiejus/code/iodine/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -256,6 +304,7 @@
 				42282E1914ED3DD1000790B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
