@@ -8,6 +8,12 @@
 
 #import "Settings.h"
 
+#include <pwd.h>
+
+
 @implementation Settings
+@synthesize nameserv_addr, topdomain, username, password, max_downstream_frag_size;
+@synthesize autodetect_frag_size, raw_mode, lazymode, selecttimeout, hostname_maxlen;
+
 
 @end

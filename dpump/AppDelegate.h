@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StartPage.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+    StartPage *startPage;
+}
 
+@property (nonatomic, retain) StartPage *startPage;
 @property (strong, nonatomic) UIWindow *window;
-
 @end

@@ -10,6 +10,7 @@
 
 @implementation AppDelegate
 
+@synthesize startPage;
 @synthesize window = _window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -19,6 +20,10 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 
+    self.startPage = [[StartPage alloc] initWithNibName:@"StartPage"
+                                                 bundle:[NSBundle mainBundle]];
+    
+    [self.window addSubview:self.startPage.view];
     return YES;
 }
 

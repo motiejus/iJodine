@@ -10,26 +10,28 @@
 
 @interface Settings : NSObject
 {
-    char *nameserv_addr;
-	char *topdomain;
-	char *username;
-	char password[33];
-	int foreground;
-	char *newroot;
-	char *context;
-	char *device;
-	char *pidfile;
-	int choice;
-	int tun_fd;
-	int dns_fd;
-	int max_downstream_frag_size;
-	int autodetect_frag_size;
-	int retval;
-	int raw_mode;
-	int lazymode;
-	int selecttimeout;
-	int hostname_maxlen;
+    NSString *nameserv_addr;
+	NSString *topdomain;
+	NSString *username;
+	NSString *password; // length 33!
+	NSNumber *max_downstream_frag_size;
+	NSNumber *autodetect_frag_size;
+	NSNumber *raw_mode;
+	NSNumber *lazymode;
+	NSNumber *selecttimeout;
+	NSNumber *hostname_maxlen;
 }
+@property (nonatomic, retain) NSString *nameserv_addr;
+@property (nonatomic, retain) NSString *topdomain;
+@property (nonatomic, retain) NSString *username;
+@property (nonatomic, retain) NSString *password; // length 33!
+@property (nonatomic, retain) NSNumber *max_downstream_frag_size;
+@property (nonatomic, retain) NSNumber *autodetect_frag_size;
+@property (nonatomic, retain) NSNumber *raw_mode;
+@property (nonatomic, retain) NSNumber *lazymode;
+@property (nonatomic, retain) NSNumber *selecttimeout;
+@property (nonatomic, retain) NSNumber *hostname_maxlen;
+
 
 
 @end

@@ -15,6 +15,8 @@
 		42282E1414ED3DD1000790B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42282E1314ED3DD1000790B4 /* AppDelegate.m */; };
 		42DA8D9D14EDB8B600F172B6 /* libiodine_proj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4253E38E14EDAEC60023BAE5 /* libiodine_proj.a */; };
 		42DA8DA014EDBD2500F172B6 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DA8D9F14EDBD2500F172B6 /* Settings.m */; };
+		42DA8DF314EDC8B200F172B6 /* StartPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DA8DF114EDC8B200F172B6 /* StartPage.m */; };
+		42DA8DF414EDC8B200F172B6 /* StartPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DA8DF214EDC8B200F172B6 /* StartPage.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,9 @@
 		4253E38914EDAEC60023BAE5 /* iodine_proj.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iodine_proj.xcodeproj; path = ../iodine_proj/iodine_proj.xcodeproj; sourceTree = "<group>"; };
 		42DA8D9E14EDBD2500F172B6 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		42DA8D9F14EDBD2500F172B6 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		42DA8DF014EDC8B200F172B6 /* StartPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartPage.h; sourceTree = "<group>"; };
+		42DA8DF114EDC8B200F172B6 /* StartPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartPage.m; sourceTree = "<group>"; };
+		42DA8DF214EDC8B200F172B6 /* StartPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartPage.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +99,9 @@
 				42DA8D9E14EDBD2500F172B6 /* Settings.h */,
 				42DA8D9F14EDBD2500F172B6 /* Settings.m */,
 				42282E0A14ED3DD1000790B4 /* Supporting Files */,
+				42DA8DF014EDC8B200F172B6 /* StartPage.h */,
+				42DA8DF114EDC8B200F172B6 /* StartPage.m */,
+				42DA8DF214EDC8B200F172B6 /* StartPage.xib */,
 			);
 			path = dpump;
 			sourceTree = "<group>";
@@ -184,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42282E0E14ED3DD1000790B4 /* InfoPlist.strings in Resources */,
+				42DA8DF414EDC8B200F172B6 /* StartPage.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +206,7 @@
 				42282E1014ED3DD1000790B4 /* main.m in Sources */,
 				42282E1414ED3DD1000790B4 /* AppDelegate.m in Sources */,
 				42DA8DA014EDBD2500F172B6 /* Settings.m in Sources */,
+				42DA8DF314EDC8B200F172B6 /* StartPage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
