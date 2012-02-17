@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StartPage : UIViewController
+@interface StartPage : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource>
+{
+    NSMutableArray *settingsArray;
+    UIPickerView *pkrSettings;
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView;
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component;
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+
+@property (nonatomic, retain) NSMutableArray *settingsArray;
+@property (nonatomic, retain) IBOutlet UIPickerView *pkrSettings;
 
 @end
