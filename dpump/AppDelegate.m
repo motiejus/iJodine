@@ -20,7 +20,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 
-    self.startPage = [[StartPage alloc] initWithNibName:@"StartPage"
+    self.startPage = [[StartPg alloc] initWithNibName:@"StartPg"
                                                  bundle:[NSBundle mainBundle]];
     
     [self.window addSubview:self.startPage.view];

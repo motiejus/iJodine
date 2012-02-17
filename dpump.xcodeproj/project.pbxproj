@@ -13,10 +13,10 @@
 		42282E0E14ED3DD1000790B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42282E0C14ED3DD1000790B4 /* InfoPlist.strings */; };
 		42282E1014ED3DD1000790B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42282E0F14ED3DD1000790B4 /* main.m */; };
 		42282E1414ED3DD1000790B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42282E1314ED3DD1000790B4 /* AppDelegate.m */; };
+		42D73C9B14EEADE900893A5B /* StartPg.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D73C9914EEADE800893A5B /* StartPg.m */; };
+		42D73C9C14EEADE900893A5B /* StartPg.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D73C9A14EEADE900893A5B /* StartPg.xib */; };
 		42DA8D9D14EDB8B600F172B6 /* libiodine_proj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4253E38E14EDAEC60023BAE5 /* libiodine_proj.a */; };
 		42DA8DA014EDBD2500F172B6 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DA8D9F14EDBD2500F172B6 /* Settings.m */; };
-		42DA8DF314EDC8B200F172B6 /* StartPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DA8DF114EDC8B200F172B6 /* StartPage.m */; };
-		42DA8DF414EDC8B200F172B6 /* StartPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DA8DF214EDC8B200F172B6 /* StartPage.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,11 +41,11 @@
 		42282E1214ED3DD1000790B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42282E1314ED3DD1000790B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4253E38914EDAEC60023BAE5 /* iodine_proj.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iodine_proj.xcodeproj; path = ../iodine_proj/iodine_proj.xcodeproj; sourceTree = "<group>"; };
+		42D73C9814EEADE800893A5B /* StartPg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartPg.h; sourceTree = "<group>"; };
+		42D73C9914EEADE800893A5B /* StartPg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartPg.m; sourceTree = "<group>"; };
+		42D73C9A14EEADE900893A5B /* StartPg.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartPg.xib; sourceTree = "<group>"; };
 		42DA8D9E14EDBD2500F172B6 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		42DA8D9F14EDBD2500F172B6 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
-		42DA8DF014EDC8B200F172B6 /* StartPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartPage.h; sourceTree = "<group>"; };
-		42DA8DF114EDC8B200F172B6 /* StartPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartPage.m; sourceTree = "<group>"; };
-		42DA8DF214EDC8B200F172B6 /* StartPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartPage.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +98,10 @@
 				42282E1314ED3DD1000790B4 /* AppDelegate.m */,
 				42DA8D9E14EDBD2500F172B6 /* Settings.h */,
 				42DA8D9F14EDBD2500F172B6 /* Settings.m */,
+				42D73C9814EEADE800893A5B /* StartPg.h */,
+				42D73C9914EEADE800893A5B /* StartPg.m */,
+				42D73C9A14EEADE900893A5B /* StartPg.xib */,
 				42282E0A14ED3DD1000790B4 /* Supporting Files */,
-				42DA8DF014EDC8B200F172B6 /* StartPage.h */,
-				42DA8DF114EDC8B200F172B6 /* StartPage.m */,
-				42DA8DF214EDC8B200F172B6 /* StartPage.xib */,
 			);
 			path = dpump;
 			sourceTree = "<group>";
@@ -192,7 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42282E0E14ED3DD1000790B4 /* InfoPlist.strings in Resources */,
-				42DA8DF414EDC8B200F172B6 /* StartPage.xib in Resources */,
+				42D73C9C14EEADE900893A5B /* StartPg.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +206,7 @@
 				42282E1014ED3DD1000790B4 /* main.m in Sources */,
 				42282E1414ED3DD1000790B4 /* AppDelegate.m in Sources */,
 				42DA8DA014EDBD2500F172B6 /* Settings.m in Sources */,
-				42DA8DF314EDC8B200F172B6 /* StartPage.m in Sources */,
+				42D73C9B14EEADE900893A5B /* StartPg.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +230,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -245,7 +246,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
 			};
 			name = Debug;
 		};
@@ -255,6 +259,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -264,7 +269,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

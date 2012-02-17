@@ -26,6 +26,7 @@
 
 -(void)encodeWithCoder:(NSCoder *)encoder;
 -(id)initWithCoder:(NSCoder *)decoder;
+- (NSString*)title;
 
 @property (nonatomic, retain) NSString *title;
 @property (nonatomic, retain) NSString *nameserv_addr;
