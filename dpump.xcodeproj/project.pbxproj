@@ -20,6 +20,7 @@
 		42DA8DA014EDBD2500F172B6 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DA8D9F14EDBD2500F172B6 /* Settings.m */; };
 		42DEDC9B14EEEC7A003025FA /* LogReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DEDC9A14EEEC7A003025FA /* LogReader.m */; };
 		42DEDC9E14EEED6F003025FA /* LogWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DEDC9D14EEED6F003025FA /* LogWatcher.m */; };
+		42DEDCA114EF0C2F003025FA /* Worker.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DEDCA014EF0C2F003025FA /* Worker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		42DEDC9A14EEEC7A003025FA /* LogReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogReader.m; sourceTree = "<group>"; };
 		42DEDC9C14EEED6F003025FA /* LogWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogWatcher.h; sourceTree = "<group>"; };
 		42DEDC9D14EEED6F003025FA /* LogWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogWatcher.m; sourceTree = "<group>"; };
+		42DEDC9F14EF0C2F003025FA /* Worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
+		42DEDCA014EF0C2F003025FA /* Worker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Worker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				42D73C9E14EEB6E500893A5B /* StatusDialog.m */,
 				42DEDC9C14EEED6F003025FA /* LogWatcher.h */,
 				42DEDC9D14EEED6F003025FA /* LogWatcher.m */,
+				42DEDC9F14EF0C2F003025FA /* Worker.h */,
+				42DEDCA014EF0C2F003025FA /* Worker.m */,
 				42D73C9F14EEB6E500893A5B /* StatusDialog.xib */,
 				42282E0A14ED3DD1000790B4 /* Supporting Files */,
 			);
@@ -227,6 +232,7 @@
 				42D73CA014EEB6E500893A5B /* StatusDialog.m in Sources */,
 				42DEDC9B14EEEC7A003025FA /* LogReader.m in Sources */,
 				42DEDC9E14EEED6F003025FA /* LogWatcher.m in Sources */,
+				42DEDCA114EF0C2F003025FA /* Worker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

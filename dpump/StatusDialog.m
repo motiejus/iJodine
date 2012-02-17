@@ -8,18 +8,18 @@
 
 #import "StatusDialog.h"
 
-
 @implementation StatusDialog
 
-@synthesize logWatcher;
+@synthesize logWatcher, worker;
 @synthesize textView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        logWatcher = [[LogWatcher alloc] init];
         // Custom initialization
+        logWatcher = [[LogWatcher alloc] init];
+        worker = [[Worker alloc] init];
     }
     return self;
 }
@@ -37,9 +37,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+        
     // Do any additional setup after loading the view from its nib.
     [NSThread detachNewThreadSelector:@selector(backgroundThread:)
                              toTarget:logWatcher withObject:textView];
+    [NSThread detachNewThreadSelector:@selector(backgroundThread:)
+                             toTarget:worker withObject:nil];
 }
 
 - (void)viewDidUnload

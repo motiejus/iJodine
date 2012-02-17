@@ -34,7 +34,7 @@
 }
 
 -(void)addSomeText:(NSString *)text {
-    textView.text = [NSString stringWithFormat:@"%s %s", textView.text, text];
+    textView.text = [NSString stringWithFormat:@"%@ %@", textView.text, text];
 }
 
 @end
