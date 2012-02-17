@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Settings : NSObject
+@interface Settings : NSObject <NSCoding>
 {
+    NSString *title;
+    
     NSString *nameserv_addr;
 	NSString *topdomain;
 	NSString *username;
@@ -21,6 +23,11 @@
 	NSNumber *selecttimeout;
 	NSNumber *hostname_maxlen;
 }
+
+-(void)encodeWithCoder:(NSCoder *)encoder;
+-(id)initWithCoder:(NSCoder *)decoder;
+
+@property (nonatomic, retain) NSString *title;
 @property (nonatomic, retain) NSString *nameserv_addr;
 @property (nonatomic, retain) NSString *topdomain;
 @property (nonatomic, retain) NSString *username;
@@ -31,7 +38,5 @@
 @property (nonatomic, retain) NSNumber *lazymode;
 @property (nonatomic, retain) NSNumber *selecttimeout;
 @property (nonatomic, retain) NSNumber *hostname_maxlen;
-
-
 
 @end
