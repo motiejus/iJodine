@@ -15,6 +15,8 @@
 		42282E1414ED3DD1000790B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42282E1314ED3DD1000790B4 /* AppDelegate.m */; };
 		42D73C9B14EEADE900893A5B /* StartPg.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D73C9914EEADE800893A5B /* StartPg.m */; };
 		42D73C9C14EEADE900893A5B /* StartPg.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D73C9A14EEADE900893A5B /* StartPg.xib */; };
+		42D73CA014EEB6E500893A5B /* StatusDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D73C9E14EEB6E500893A5B /* StatusDialog.m */; };
+		42D73CA114EEB6E500893A5B /* StatusDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D73C9F14EEB6E500893A5B /* StatusDialog.xib */; };
 		42DA8D9D14EDB8B600F172B6 /* libiodine_proj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4253E38E14EDAEC60023BAE5 /* libiodine_proj.a */; };
 		42DA8DA014EDBD2500F172B6 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DA8D9F14EDBD2500F172B6 /* Settings.m */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,9 @@
 		42D73C9814EEADE800893A5B /* StartPg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartPg.h; sourceTree = "<group>"; };
 		42D73C9914EEADE800893A5B /* StartPg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartPg.m; sourceTree = "<group>"; };
 		42D73C9A14EEADE900893A5B /* StartPg.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartPg.xib; sourceTree = "<group>"; };
+		42D73C9D14EEB6E500893A5B /* StatusDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusDialog.h; sourceTree = "<group>"; };
+		42D73C9E14EEB6E500893A5B /* StatusDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusDialog.m; sourceTree = "<group>"; };
+		42D73C9F14EEB6E500893A5B /* StatusDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusDialog.xib; sourceTree = "<group>"; };
 		42DA8D9E14EDBD2500F172B6 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		42DA8D9F14EDBD2500F172B6 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +106,9 @@
 				42D73C9814EEADE800893A5B /* StartPg.h */,
 				42D73C9914EEADE800893A5B /* StartPg.m */,
 				42D73C9A14EEADE900893A5B /* StartPg.xib */,
+				42D73C9D14EEB6E500893A5B /* StatusDialog.h */,
+				42D73C9E14EEB6E500893A5B /* StatusDialog.m */,
+				42D73C9F14EEB6E500893A5B /* StatusDialog.xib */,
 				42282E0A14ED3DD1000790B4 /* Supporting Files */,
 			);
 			path = dpump;
@@ -193,6 +201,7 @@
 			files = (
 				42282E0E14ED3DD1000790B4 /* InfoPlist.strings in Resources */,
 				42D73C9C14EEADE900893A5B /* StartPg.xib in Resources */,
+				42D73CA114EEB6E500893A5B /* StatusDialog.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +216,7 @@
 				42282E1414ED3DD1000790B4 /* AppDelegate.m in Sources */,
 				42DA8DA014EDBD2500F172B6 /* Settings.m in Sources */,
 				42D73C9B14EEADE900893A5B /* StartPg.m in Sources */,
+				42D73CA014EEB6E500893A5B /* StatusDialog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

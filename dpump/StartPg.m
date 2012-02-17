@@ -14,8 +14,10 @@
 @synthesize pkrSettings;
 @synthesize settings;
 
+@synthesize statusDialog;
+
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {                                              
-    return 1;                                                                                                         
+    return 1;                     
 }                                                                                                                     
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
     NSLog(@"Number of rows asked");
@@ -26,6 +28,13 @@
     return [[self.settings objectAtIndex:row] title];                                                                    
 }                                                                                                                     
 
+- (IBAction)connectButtonClicked:(id)sender  
+{
+    self.statusDialog = [[StatusDialog alloc] initWithNibName:@"StatusDialog"
+                                               bundle:[NSBundle mainBundle]];
+    
+    [self.view addSubview:self.statusDialog.view];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
