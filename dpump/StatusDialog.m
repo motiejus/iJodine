@@ -16,11 +16,10 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil setting:(Settings*)s
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    NSLog(@"Settings title: %@", s.title);
     if (self) {
         // Custom initialization
         logWatcher = [[LogWatcher alloc] init];
-        worker = [[Worker alloc] init];
+        worker = [[Worker alloc] initWithSettings:s];
     }
     return self;
 }

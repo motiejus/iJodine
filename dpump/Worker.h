@@ -7,9 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Settings.h"
 
 @interface Worker : NSObject
+{
+    Settings *settings;
+}
+-(void)backgroundThread:(Settings*)settings;
+-(id) initWithSettings:(Settings*)s;
 
--(void)backgroundThread:(NSData*)whatever;
+@property (nonatomic, retain) Settings *settings;
 
 @end
