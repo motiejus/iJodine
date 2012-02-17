@@ -15,6 +15,24 @@
 @synthesize nameserv_addr, topdomain, username, password, max_downstream_frag_size;
 @synthesize autodetect_frag_size, raw_mode, lazymode, selecttimeout, hostname_maxlen;
 
+-(id) init {
+    self = [super init];
+    
+    nameserv_addr = NULL;
+	topdomain = NULL;
+	username = NULL;
+    password = [[NSString alloc] initWithString:@"\0"];
+    
+	autodetect_frag_size = [[NSNumber alloc] initWithInt:1];
+	max_downstream_frag_size = [[NSNumber alloc] initWithInt:3072];
+	raw_mode = [[NSNumber alloc] initWithInt:1];
+	lazymode = [[NSNumber alloc] initWithInt:1];
+	selecttimeout = [[NSNumber alloc] initWithInt:4];
+	hostname_maxlen = [[NSNumber alloc] initWithInt:0xFF];
+
+    return self;
+}
+
 -(void)encodeWithCoder:(NSCoder *)encoder {
     [encoder encodeObject:nameserv_addr forKey:@"nameserv_addr"];
     [encoder encodeObject:topdomain forKey:@"topdomain"];
@@ -29,7 +47,7 @@
 }
 
 -(id)initWithCoder:(NSCoder *)decoder {
-    if ((self=[super init])) {
+    if ((self=[Settings init])) {
         nameserv_addr = [decoder decodeObjectForKey:@"nameserv_addr"];
         topdomain = [decoder decodeObjectForKey:@"topdomain"];
         username = [decoder decodeObjectForKey:@"username"];

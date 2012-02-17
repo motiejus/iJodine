@@ -18,7 +18,6 @@
 		42D73CA014EEB6E500893A5B /* StatusDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D73C9E14EEB6E500893A5B /* StatusDialog.m */; };
 		42D73CA114EEB6E500893A5B /* StatusDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D73C9F14EEB6E500893A5B /* StatusDialog.xib */; };
 		42DA8DA014EDBD2500F172B6 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DA8D9F14EDBD2500F172B6 /* Settings.m */; };
-		42DEDC9B14EEEC7A003025FA /* LogReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DEDC9A14EEEC7A003025FA /* LogReader.m */; };
 		42DEDC9E14EEED6F003025FA /* LogWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DEDC9D14EEED6F003025FA /* LogWatcher.m */; };
 		42DEDCA114EF0C2F003025FA /* Worker.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DEDCA014EF0C2F003025FA /* Worker.m */; };
 /* End PBXBuildFile section */
@@ -53,8 +52,6 @@
 		42D73C9F14EEB6E500893A5B /* StatusDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusDialog.xib; sourceTree = "<group>"; };
 		42DA8D9E14EDBD2500F172B6 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		42DA8D9F14EDBD2500F172B6 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
-		42DEDC9914EEEC7A003025FA /* LogReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogReader.h; sourceTree = "<group>"; };
-		42DEDC9A14EEEC7A003025FA /* LogReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogReader.m; sourceTree = "<group>"; };
 		42DEDC9C14EEED6F003025FA /* LogWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogWatcher.h; sourceTree = "<group>"; };
 		42DEDC9D14EEED6F003025FA /* LogWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogWatcher.m; sourceTree = "<group>"; };
 		42DEDC9F14EF0C2F003025FA /* Worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
@@ -78,8 +75,6 @@
 		42282DF414ED3DD1000790B4 = {
 			isa = PBXGroup;
 			children = (
-				42DEDC9914EEEC7A003025FA /* LogReader.h */,
-				42DEDC9A14EEEC7A003025FA /* LogReader.m */,
 				42C686E014EED9ED002CBB57 /* iodine_pr.xcodeproj */,
 				42282E0914ED3DD1000790B4 /* dpump */,
 				42282E0214ED3DD1000790B4 /* Frameworks */,
@@ -230,7 +225,6 @@
 				42DA8DA014EDBD2500F172B6 /* Settings.m in Sources */,
 				42D73C9B14EEADE900893A5B /* StartPg.m in Sources */,
 				42D73CA014EEB6E500893A5B /* StatusDialog.m in Sources */,
-				42DEDC9B14EEEC7A003025FA /* LogReader.m in Sources */,
 				42DEDC9E14EEED6F003025FA /* LogWatcher.m in Sources */,
 				42DEDCA114EF0C2F003025FA /* Worker.m in Sources */,
 			);

@@ -13,10 +13,13 @@
 @implementation Worker
 
 -(void)backgroundThread:(NSData*)whatever {
+    /*
     sleep(3);
     for (int i = 0; i <= 10; i++) {
         fprintf(stderr, "Tick %d\n", i);
         sleep(2);
     }
+     */
+    
 }
 @end

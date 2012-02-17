@@ -13,9 +13,10 @@
 @synthesize logWatcher, worker;
 @synthesize textView;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil setting:(Settings*)s
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    NSLog(@"Settings title: %@", s.title);
     if (self) {
         // Custom initialization
         logWatcher = [[LogWatcher alloc] init];

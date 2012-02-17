@@ -24,13 +24,17 @@
 }                                                                                                                     
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    return [[self.settings objectAtIndex:row] title];                                                                    
-}                                                                                                                     
+    return [[self.settings objectAtIndex:row] title];
+}
 
 - (IBAction)connectButtonClicked:(id)sender
 {
+    NSInteger row = [pkrSettings selectedRowInComponent:0];
+    Settings *cur = [self.settings objectAtIndex:row];
+    
     self.statusDialog = [[StatusDialog alloc] initWithNibName:@"StatusDialog"
-                                               bundle:[NSBundle mainBundle]];
+                                               bundle:[NSBundle mainBundle]
+                                                      setting:cur];
     
     [self.view addSubview:self.statusDialog.view];
 }
