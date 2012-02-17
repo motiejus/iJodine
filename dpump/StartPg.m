@@ -28,7 +28,7 @@
     return [[self.settings objectAtIndex:row] title];                                                                    
 }                                                                                                                     
 
-- (IBAction)connectButtonClicked:(id)sender  
+- (IBAction)connectButtonClicked:(id)sender
 {
     self.statusDialog = [[StatusDialog alloc] initWithNibName:@"StatusDialog"
                                                bundle:[NSBundle mainBundle]];
