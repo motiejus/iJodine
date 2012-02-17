@@ -13,6 +13,8 @@
 		42282E0E14ED3DD1000790B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42282E0C14ED3DD1000790B4 /* InfoPlist.strings */; };
 		42282E1014ED3DD1000790B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42282E0F14ED3DD1000790B4 /* main.m */; };
 		42282E1414ED3DD1000790B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42282E1314ED3DD1000790B4 /* AppDelegate.m */; };
+		42B3B7FB14EF1E6B00C0857E /* libiodine_pr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C686E514EED9ED002CBB57 /* libiodine_pr.a */; };
+		42B3B80214EF206000C0857E /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B3B80114EF206000C0857E /* libz.1.2.5.dylib */; };
 		42D73C9B14EEADE900893A5B /* StartPg.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D73C9914EEADE800893A5B /* StartPg.m */; };
 		42D73C9C14EEADE900893A5B /* StartPg.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D73C9A14EEADE900893A5B /* StartPg.xib */; };
 		42D73CA014EEB6E500893A5B /* StatusDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D73C9E14EEB6E500893A5B /* StatusDialog.m */; };
@@ -43,6 +45,7 @@
 		42282E1114ED3DD1000790B4 /* dpump-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dpump-Prefix.pch"; sourceTree = "<group>"; };
 		42282E1214ED3DD1000790B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42282E1314ED3DD1000790B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		42B3B80114EF206000C0857E /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		42C686E014EED9ED002CBB57 /* iodine_pr.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iodine_pr.xcodeproj; path = ../iodine_pr/iodine_pr.xcodeproj; sourceTree = "<group>"; };
 		42D73C9814EEADE800893A5B /* StartPg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartPg.h; sourceTree = "<group>"; };
 		42D73C9914EEADE800893A5B /* StartPg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartPg.m; sourceTree = "<group>"; };
@@ -63,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42B3B80214EF206000C0857E /* libz.1.2.5.dylib in Frameworks */,
+				42B3B7FB14EF1E6B00C0857E /* libiodine_pr.a in Frameworks */,
 				42282E0414ED3DD1000790B4 /* UIKit.framework in Frameworks */,
 				42282E0614ED3DD1000790B4 /* Foundation.framework in Frameworks */,
 				42282E0814ED3DD1000790B4 /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +80,7 @@
 		42282DF414ED3DD1000790B4 = {
 			isa = PBXGroup;
 			children = (
+				42B3B80114EF206000C0857E /* libz.1.2.5.dylib */,
 				42C686E014EED9ED002CBB57 /* iodine_pr.xcodeproj */,
 				42282E0914ED3DD1000790B4 /* dpump */,
 				42282E0214ED3DD1000790B4 /* Frameworks */,
