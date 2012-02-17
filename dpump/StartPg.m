@@ -20,7 +20,6 @@
     return 1;                     
 }                                                                                                                     
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    NSLog(@"Number of rows asked");
     return [self.settings count];                                                                                
 }                                                                                                                     
 

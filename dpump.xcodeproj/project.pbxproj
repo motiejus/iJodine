@@ -17,17 +17,18 @@
 		42D73C9C14EEADE900893A5B /* StartPg.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D73C9A14EEADE900893A5B /* StartPg.xib */; };
 		42D73CA014EEB6E500893A5B /* StatusDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D73C9E14EEB6E500893A5B /* StatusDialog.m */; };
 		42D73CA114EEB6E500893A5B /* StatusDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D73C9F14EEB6E500893A5B /* StatusDialog.xib */; };
-		42DA8D9D14EDB8B600F172B6 /* libiodine_proj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4253E38E14EDAEC60023BAE5 /* libiodine_proj.a */; };
 		42DA8DA014EDBD2500F172B6 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DA8D9F14EDBD2500F172B6 /* Settings.m */; };
+		42DEDC9B14EEEC7A003025FA /* LogReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DEDC9A14EEEC7A003025FA /* LogReader.m */; };
+		42DEDC9E14EEED6F003025FA /* LogWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DEDC9D14EEED6F003025FA /* LogWatcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4253E38D14EDAEC60023BAE5 /* PBXContainerItemProxy */ = {
+		42C686E414EED9ED002CBB57 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4253E38914EDAEC60023BAE5 /* iodine_proj.xcodeproj */;
+			containerPortal = 42C686E014EED9ED002CBB57 /* iodine_pr.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 4253E32F14EDAE0F0023BAE5;
-			remoteInfo = iodine_proj;
+			remoteGlobalIDString = 42C6868614EED935002CBB57;
+			remoteInfo = iodine_pr;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -42,7 +43,7 @@
 		42282E1114ED3DD1000790B4 /* dpump-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dpump-Prefix.pch"; sourceTree = "<group>"; };
 		42282E1214ED3DD1000790B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42282E1314ED3DD1000790B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4253E38914EDAEC60023BAE5 /* iodine_proj.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iodine_proj.xcodeproj; path = ../iodine_proj/iodine_proj.xcodeproj; sourceTree = "<group>"; };
+		42C686E014EED9ED002CBB57 /* iodine_pr.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iodine_pr.xcodeproj; path = ../iodine_pr/iodine_pr.xcodeproj; sourceTree = "<group>"; };
 		42D73C9814EEADE800893A5B /* StartPg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartPg.h; sourceTree = "<group>"; };
 		42D73C9914EEADE800893A5B /* StartPg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartPg.m; sourceTree = "<group>"; };
 		42D73C9A14EEADE900893A5B /* StartPg.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartPg.xib; sourceTree = "<group>"; };
@@ -51,6 +52,10 @@
 		42D73C9F14EEB6E500893A5B /* StatusDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusDialog.xib; sourceTree = "<group>"; };
 		42DA8D9E14EDBD2500F172B6 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		42DA8D9F14EDBD2500F172B6 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		42DEDC9914EEEC7A003025FA /* LogReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogReader.h; sourceTree = "<group>"; };
+		42DEDC9A14EEEC7A003025FA /* LogReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogReader.m; sourceTree = "<group>"; };
+		42DEDC9C14EEED6F003025FA /* LogWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogWatcher.h; sourceTree = "<group>"; };
+		42DEDC9D14EEED6F003025FA /* LogWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogWatcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42DA8D9D14EDB8B600F172B6 /* libiodine_proj.a in Frameworks */,
 				42282E0414ED3DD1000790B4 /* UIKit.framework in Frameworks */,
 				42282E0614ED3DD1000790B4 /* Foundation.framework in Frameworks */,
 				42282E0814ED3DD1000790B4 /* CoreGraphics.framework in Frameworks */,
@@ -71,7 +75,9 @@
 		42282DF414ED3DD1000790B4 = {
 			isa = PBXGroup;
 			children = (
-				4253E38914EDAEC60023BAE5 /* iodine_proj.xcodeproj */,
+				42DEDC9914EEEC7A003025FA /* LogReader.h */,
+				42DEDC9A14EEEC7A003025FA /* LogReader.m */,
+				42C686E014EED9ED002CBB57 /* iodine_pr.xcodeproj */,
 				42282E0914ED3DD1000790B4 /* dpump */,
 				42282E0214ED3DD1000790B4 /* Frameworks */,
 				42282E0014ED3DD1000790B4 /* Products */,
@@ -108,6 +114,8 @@
 				42D73C9A14EEADE900893A5B /* StartPg.xib */,
 				42D73C9D14EEB6E500893A5B /* StatusDialog.h */,
 				42D73C9E14EEB6E500893A5B /* StatusDialog.m */,
+				42DEDC9C14EEED6F003025FA /* LogWatcher.h */,
+				42DEDC9D14EEED6F003025FA /* LogWatcher.m */,
 				42D73C9F14EEB6E500893A5B /* StatusDialog.xib */,
 				42282E0A14ED3DD1000790B4 /* Supporting Files */,
 			);
@@ -125,10 +133,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4253E38A14EDAEC60023BAE5 /* Products */ = {
+		42C686E114EED9ED002CBB57 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4253E38E14EDAEC60023BAE5 /* libiodine_proj.a */,
+				42C686E514EED9ED002CBB57 /* libiodine_pr.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,8 +181,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 4253E38A14EDAEC60023BAE5 /* Products */;
-					ProjectRef = 4253E38914EDAEC60023BAE5 /* iodine_proj.xcodeproj */;
+					ProductGroup = 42C686E114EED9ED002CBB57 /* Products */;
+					ProjectRef = 42C686E014EED9ED002CBB57 /* iodine_pr.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -185,11 +193,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		4253E38E14EDAEC60023BAE5 /* libiodine_proj.a */ = {
+		42C686E514EED9ED002CBB57 /* libiodine_pr.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libiodine_proj.a;
-			remoteRef = 4253E38D14EDAEC60023BAE5 /* PBXContainerItemProxy */;
+			path = libiodine_pr.a;
+			remoteRef = 42C686E414EED9ED002CBB57 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -217,6 +225,8 @@
 				42DA8DA014EDBD2500F172B6 /* Settings.m in Sources */,
 				42D73C9B14EEADE900893A5B /* StartPg.m in Sources */,
 				42D73CA014EEB6E500893A5B /* StatusDialog.m in Sources */,
+				42DEDC9B14EEEC7A003025FA /* LogReader.m in Sources */,
+				42DEDC9E14EEED6F003025FA /* LogWatcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

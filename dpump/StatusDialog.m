@@ -8,12 +8,17 @@
 
 #import "StatusDialog.h"
 
+
 @implementation StatusDialog
+
+@synthesize logWatcher;
+@synthesize textView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        logWatcher = [[LogWatcher alloc] init];
         // Custom initialization
     }
     return self;
@@ -33,6 +38,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [NSThread detachNewThreadSelector:@selector(backgroundThread:)
+                             toTarget:logWatcher withObject:textView];
 }
 
 - (void)viewDidUnload
@@ -47,5 +54,6 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
 
 @end

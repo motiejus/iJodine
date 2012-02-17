@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LogWatcher.h"
 
-@interface StatusDialog : UIViewController
+@interface StatusDialog : UIViewController<NSPortDelegate>
+{
+    UITextView *textView;
+    LogWatcher *logWatcher;
+}
+
+@property (nonatomic, retain) LogWatcher *logWatcher;
+@property (nonatomic, retain) IBOutlet UITextView *textView;
 
 @end
