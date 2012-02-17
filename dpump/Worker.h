@@ -11,11 +11,11 @@
 
 @interface Worker : NSObject
 {
-    Settings *settings;
+    Settings *s;
 }
--(void)backgroundThread:(Settings*)settings;
--(id) initWithSettings:(Settings*)s;
+-(void)backgroundThread:(NSData*)whatever;
+-(id) initWithSettings:(Settings*)settings;
 
-@property (nonatomic, retain) Settings *settings;
+@property (nonatomic, retain) Settings *s;
 
 @end
