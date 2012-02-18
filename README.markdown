@@ -23,11 +23,10 @@ compile
 now we have iPhone paths that we should include to:
 
 * Header Search Paths
-* Library Search Paths
 
 one recursive path which includes the compiled directories suits fine.
 
-define DAWIN in build options
+define DAWIN and TUNEMU in build options
 
 At this stage iodine alone compiles.
 
@@ -41,6 +40,9 @@ II. Add iodine subproject to whatever you are building (here)
 
 III. Add linker dependencies
 
-Add iodine\_whatever.a and zlib.1.2.5.dylib as static binary dependencies.
+Add iodine\_whatever.a, zlib.1.2.5.dylib and libpcap.1.1.1.dylib as static
+binary dependencies to the iJodine project. At the moment it is added to the
+project root path and settings, but it might be sufficient to add to project
+path only.
 
 Profit.
