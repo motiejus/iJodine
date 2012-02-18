@@ -12,13 +12,15 @@
 #include "common.h"
 #include "client.h"
 #include "tun.h"
+#include "util.h"
 
 @implementation Worker
 
 @synthesize s;
 
 static void usage() {
-    fprintf(stderr, "Quitting in 5 secs\n");
+    fprintf(stderr, "Quitting in 30 secs\n");
+    sleep(30);
     exit(EXIT_FAILURE);
 }
 
@@ -29,8 +31,7 @@ static void usage() {
 }
 
 -(void)backgroundThread:(NSData*)whatever {
-    NSLog(@"Settings title: %@", s.title);
-    
+    fprintf(stderr, "Loading settings %s\n", [s.title UTF8String]);
     int tun_fd;
 	int dns_fd;
     
@@ -43,6 +44,9 @@ static void usage() {
     const char *password = [s.password UTF8String];
     int raw_mode = [s.raw_mode intValue];
     int autodetect_frag_size = [s.autodetect_frag_size intValue];
+
+    if (!nameserv_addr)
+        nameserv_addr = get_resolvconf_addr();
     
     char *device = NULL;
     int retval = 0;
@@ -80,6 +84,7 @@ static void usage() {
 	client_set_hostname_maxlen(hostname_maxlen);
 
     // The part where password length is checked and password possibly read
+    
     client_set_password(password);
     
 	if ((tun_fd = open_tun(device)) == -1) {

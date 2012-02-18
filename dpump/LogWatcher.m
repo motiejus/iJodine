@@ -18,7 +18,7 @@
     int fd[2];
     // data written to fd[1] appears on fd[0]
     pipe(fd);
-    //dup2(fd[1], 2); // stderr to our internal pipe
+    dup2(fd[1], 2); // stderr to our internal pipe
     
     char buf[4096];
     int len;

@@ -47,7 +47,7 @@
         self.settings = [NSMutableArray new];
         Settings *s = [Settings new];
         s.title = @"Default";
-        s.nameserv_addr = @"p.daro.lt";
+        s.topdomain = @"p.daro.lt";
         s.password = @"";
         [self.settings addObject:s];
     }
